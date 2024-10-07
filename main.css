@@ -1,0 +1,512 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color:rgb(213, 213, 213);
+}
+.container{
+    width:1200px;
+    max-width:100%;
+    margin:0 auto;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header > .container{
+    border-bottom:2px solid black;
+    padding:15px 0;
+    margin-bottom:35px;
+}
+
+/* items do cabeçario */
+
+.items-cabecario{
+    display:flex;
+    align-items:center;
+}
+
+.items-cabecario .items{
+    /* margin-right:20px; */
+    display:flex;
+    padding:9px;
+    border:1px solid black;
+    border-radius:15px;
+    margin-right:6px;
+}
+
+.items-cabecario .items a{
+    text-decoration:none;
+    color:black;
+    /* color:rgb(19, 38, 115); */
+}
+
+.items-cabecario .items a:hover{
+    color:rgb(19, 38, 115);
+}
+
+.items-cabecario .items:hover{
+    cursor:pointer;
+    border-left:1.5px solid black;
+    border-right:1.5px solid black;
+    border-bottom:3px solid black;
+}
+
+.items .carrinho img{
+    height:24px;
+}
+.items-cabecario .items .carrinho{
+    display:flex;
+    align-items: center;
+}
+
+/* items do menu */
+
+ .menu {
+    display:flex;
+    justify-content:space-around;
+    position:relative;
+    padding-bottom:50px;
+    /* background-color: rgb(123, 155, 204); */
+}
+
+.container .menu{
+    width:100%;
+}
+
+.menu li:hover .sub-menu{
+    display:block;
+}
+
+.menu> li:hover{
+    border-bottom:2px solid black; 
+}
+
+.menu > li{
+    list-style-type:none;
+}
+
+.menu > li{
+text-decoration:none;
+font-size:1.7em;
+color:black;
+}
+
+.sub-menu{
+    z-index:1;
+    display:none;
+    position:absolute;
+    background-color:#fff;
+    font-size:1em;
+    border: 1px solid black;
+    border-radius:8px;
+    width:230px;
+    top:50%;
+}
+
+.sub-menu li{
+    padding:9px 8px;
+    list-style-type: none;
+}
+
+.sub-menu li a{
+    text-align: left;
+    text-decoration:none;
+    color:black;
+}
+
+/* Carrosel .capa-relogios */
+.capa-relogios{
+    padding-bottom:50px;
+}
+.capa-relogios img{
+    height:275px;
+    width:100%;
+}
+
+/* Sobre a Loja */
+
+ .sobre{
+    display:flex;
+}
+
+.sobre img{
+    height:300px;
+    padding-right: 35px;
+    margin-left:155px;
+    margin-bottom:85px;
+}
+
+.sobre-texto h2{
+  padding-bottom:5px;
+}
+
+.sobre-texto .line{
+    height:1px;
+    border-bottom:2px solid rgb(36, 139, 190);
+    margin-bottom:20px;
+}
+
+.sobre-texto p{
+    text-align: justify;
+    font-size:1.2em;
+}
+
+/* Mais vendidos */
+.produtos{
+    margin-bottom:70px;
+}
+.produtos h2{
+text-align:center;
+padding:5px;
+margin-bottom:35px;
+background-color:rgb(41, 163, 161);
+color:#fff;
+}
+
+.relogios-vendidos{
+    display:grid;
+    grid-template-columns:24.25% 24.25% 24.25% 24.25%;
+    column-gap:1%;
+}
+
+.relogios-vendidos, .relogios-slide article{
+    background-color:rgb(229, 226, 226);
+}
+
+.relogios-vendidos article img{
+    height:330px;
+    width:100%;
+    cursor:zoom-in;
+    margin-bottom:5px;
+}
+
+.relogios-slide article img{
+    height:330px;
+    width:96%;
+    cursor:zoom-in;
+    margin-bottom:5px;
+}
+
+.relogios-vendidos article h3,.relogios-slide article h3{
+    font-size:1.7em;
+    padding-bottom:10px;
+    margin-left:6px;
+}
+
+.relogios-vendidos article p,.relogios-slide article p{
+    padding-bottom:15px;
+    font-style: italic;
+    margin-left:6px;
+}
+article .price strong{
+  font-size: 1.3em;
+  padding-bottom:3px;
+  margin-left:6px;
+  color:rgb(21, 46, 100)
+}
+
+article .price span{
+    font-size:1.1em;
+    font-weight:bold;
+    margin-left:6px;
+    color:rgb(21, 46, 100);
+}
+
+article .price button{
+    width:100%;
+    padding:5px;
+    font-weight:700;
+    font-size:1.2em;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+    color:#fff;
+    background-color:rgb(42, 107, 150);
+}
+
+article .price  .slide{
+    width:96%;
+    padding:5px;
+    font-weight:700;
+    font-size:1.2em;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+    color:#fff;
+    background-color:rgb(42, 107, 150);
+}
+
+article .price button:hover{
+    background-color:rgb(54, 133, 185);    
+}
+
+article .price .promo{
+background-color: #7d7d7d46;
+color:rgb(101, 21, 21);
+text-decoration: line-through;
+font-size: 1em;
+margin-left:0;
+}
+
+/* Roda pé */
+footer{
+    width:100%;
+    padding:20px;
+    background-color: rgb(42, 107, 150);
+}
+
+footer p{
+    text-decoration:underline;
+    text-align:center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:#fff;
+}
+
+/* .container> .tela-cadastro{
+    z-index:0;
+} */
+
+.tela-cadastro{
+    position:absolute;
+    right:50px;
+    top:73px;
+    z-index:1;
+    display:none;
+    max-width:100%;
+    width:400px;
+    height:450px;
+    border:2px solid black;
+    border-radius:20px;
+    background-color:#ffffff;
+}
+
+
+.tela-cadastro img{
+    height:85px;
+    padding-left:150px;
+}
+
+.tela-cadastro h2{
+    text-align:center;
+    text-decoration:overline;
+    font-size: 2em;
+} 
+
+.tela-cadastro form{
+    height:200px;
+    width:100%;
+}
+
+.tela-cadastro form label{
+    font-size:20px;
+}
+.tela-cadastro form input,button{
+    width:100%;
+    padding:4px;
+    margin-bottom:8px;
+}
+
+.tela-cadastro form button{
+    padding:3px;
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    border-radius:9px;
+    background-color: rgb(54, 133, 185);
+    color:white;
+}
+
+.tela-cadastro form button:hover{
+    background-color: rgb(74, 244, 27);
+    color:black;
+}
+/* Aqui seria o carrinho de compras
+.tela-carrinho{
+    position:absolute;
+    right:50px;
+    top:73px;
+    z-index:2;
+    display:none;
+    max-width:100%;
+    width:400px;
+    height:450px;
+    border:2px solid black;
+    border-radius:20px;
+    background-color:#ffffff;
+}
+
+.tela-carrinho .titulo-logo{
+    display:flex;
+    justify-content:center;
+}
+
+.titulo-logo h2{
+  font-size: 30px;
+  text-decoration:underline;
+}
+
+.titulo-logo img{
+    height:40px;
+} */
+
+@media screen and (max-width:640px){
+
+    .container{
+        max-width:90%;
+    }
+
+    header .container{
+        flex-direction: column;
+    }
+    
+    /* items do cabeçario */
+    
+    .items-cabecario{
+        display:flex;
+        align-items:center;
+    }
+    
+    .items-cabecario .items{
+        padding:9px 0px;
+        border:0px solid black;
+    }
+    
+    .items-cabecario .items:hover{
+        border-left:0px solid black;
+        border-right:0px solid black;
+        border-bottom:0px solid black;
+    }
+    
+ .menu {
+    padding-bottom:40px;
+}
+
+.menu li:hover .sub-menu{
+    display:block;
+}
+
+.menu > li{
+font-size:1.4em;
+}
+
+.sub-menu{
+    width:120px;
+}
+
+.sub-menu li{
+    padding:5px 8px;
+}
+
+/* Carrosel .capa-relogios */
+.capa-relogios{
+    padding-bottom:70px;
+}
+
+.capa-relogios img{
+    height:220px;
+    width:100%;
+}
+
+.sobre{
+    display:block;
+    padding-bottom:20px;
+}
+
+.sobre img{
+    height:233px;
+    padding-right: 0px;
+    margin-left:0px;
+    margin-bottom:20px;
+}
+
+.sobre-texto .line{
+    margin-bottom:10px;
+}
+
+.sobre-texto h2{
+    font-size: 1.7em;
+  }
+  
+.sobre-texto p{
+    font-size:1.3em;
+    padding-bottom:10px;
+}
+
+.relogios-vendidos{
+    display:block;
+}
+
+.relogios-vendidos article{
+    margin-bottom:25px;
+}
+
+ .relogios-vendidos, .relogios-slide article{
+    background-color:rgb(229, 226, 226);
+} 
+
+ .relogios-slide article img{
+    height:250px;
+    width:100%;
+    margin-bottom:5px;
+} 
+
+.tela-cadastro{
+    right: 10px;
+    top:110px;
+    max-width:95%;
+}
+
+.tela-cadastro img{
+    padding-left:135px;
+}
+  /* Roda pé */
+  footer{
+      padding:30px;
+  }
+  
+  footer p{
+      font-size: 1em;
+  }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    .container{
+        max-width:90%;
+    }
+
+    .sub-menu{
+        width:210px;
+        top:50%;
+    }
+    /* Sobre a Loja */
+
+ .sobre{
+    display:block;
+}
+
+.sobre img{
+    height:350px;
+    width:725px;
+    padding-right: 0px;
+    margin-left:0px;
+    margin-bottom:20px;
+}
+
+.sobre-texto h2{
+  padding-bottom:5px;
+  font-size: 2em;
+}
+
+.sobre-texto p{
+    font-size:1.3em;
+    margin-bottom:20px;
+ }
+}
